@@ -1,0 +1,79 @@
+@import '../../../css/variabilities.scss';
+
+
+.plasticWindow {
+
+    p {
+        text-align: left;
+        margin-top: 1rem;
+
+        @media (max-width: 375px) {
+            text-align: justify;
+        }
+    }
+
+    img[alt='ПВХ окна']  {
+        object-fit: cover;
+        width: 100%;
+        height: 20rem;
+        border: 1px solid grey;
+    }
+
+    // img[alt='rehau grazio'], img[alt='rehau delight'] {
+    //     height: 25rem;
+    // }
+
+    .menu_content{
+        display: flex;
+    
+    }
+ 
+
+    .colors {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        grid-template-rows: 1fr;
+        grid-gap:1%;
+
+        @media (min-width: 860px) and (max-width: 934px) {
+            grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+         }
+         @media (min-width: 768px) and (max-width: 859px) {
+            grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+         }
+
+         @media (max-width: 375px) {
+            justify-items: center;
+            grid-gap: 0.5rem;
+        }
+        
+
+        img {
+            object-fit: cover;
+            width: 10rem;
+            height: 10rem;
+            border: 1px solid grey;
+
+             @media (min-width: 860px) and (max-width: 895px) {
+                 width: 9rem;
+                 height: 9rem;
+              }
+           
+        }
+    }
+
+    ul {
+        text-align: left;
+        margin-top: 2rem;
+    }
+    h4 {
+        margin-top: 2rem;
+        font-size: 1.2rem;
+    }
+    span {
+        font-family: $roboto-slab;
+        font-weight: bold;
+    }
+
+  
+}

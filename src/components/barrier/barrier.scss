@@ -1,0 +1,196 @@
+@import '../../css/variabilities.scss';
+
+.barrier {
+    
+
+    .button_content {
+        flex-grow: 1;
+
+        button {
+            @media (max-width: 470px) {
+                font-size: 1rem;
+                padding: 0.5rem;
+            }
+            margin-right: 0.4rem;
+        }
+    }
+
+
+
+    span {
+        font-family: $roboto-slab;
+        font-weight: bold;
+        font-size: 1.1rem;
+    }
+
+    .bravoFeatures, .anMotors, .barBarrier, .wideBarrier, .antivandalProtector {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+        grid-template-rows: 1fr;
+        justify-items: center;
+        align-items: center;
+        box-shadow: 5px 5px 5px 5px rgba(235, 235, 235, 0.7);
+        padding: 1rem;
+        margin: 5rem 0;
+
+        img {
+            object-fit: cover;
+            width: 20rem;
+            border: 1px solid rgb(232, 232, 232);
+        }
+
+        p {
+            margin: 2rem 0;
+            text-align: justify;
+        }
+
+        li {
+            text-align: left;
+            padding-bottom: 1rem;
+        }
+    }
+.bravoCharacteristics, .anMotorsCharacteristics, .barCharacteristics, .wideCharacteristics, .barrierProCharacteristics {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+
+    p {
+        border-bottom: 1px solid rgb(211, 211, 211);
+        padding: 1rem 0;
+
+        @media (max-width: 375px) {
+            border-bottom: none;
+            padding: 0.3rem;
+        }
+    }
+    
+    }
+.anMotorsCharacteristics {
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.barCharacteristics, .wideCharacteristics, .barrierProCharacteristics, .barrierProCharacteristics {
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin-bottom: 10rem;
+}
+
+.plusesBarrier {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    grid-template-rows: 1fr;
+
+    @media (min-width: 751px) and (max-width: 801px) {
+        grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+     }
+     @media (min-width: 450px) and (max-width: 628px) {
+        grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+     }
+
+    div {
+        height: 15rem;
+        border: 1.2px solid rgb(184, 184, 184);
+        background-color:  white;
+
+        p {
+            margin: 0 1rem;
+            text-align: justify;
+        }
+    }
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+ul {
+    list-style: none;
+
+        @media (max-width: 375px) {
+            padding-left: 0;
+            margin-bottom: 5rem;
+        }
+}
+
+.niceBarrier {
+    margin: 5rem 0 7rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+    grid-template-rows: 1fr;
+    gap: 1%;
+
+    img {
+        @media (min-width: 768px) and (max-width: 835px) {
+            width: 23rem;
+         }
+         @media (min-width: 500px) and (max-width: 700px) {
+            width: 20rem;
+         }
+    }
+
+    
+}
+
+
+img[alt='BARRIER-PRO'] {
+    width: 25rem;
+}
+.barrierProCharacteristics, .barrierProCharacteristics {
+    margin-bottom: 7rem;
+}
+
+.antivandalProtector {
+
+    @media (max-width: 650px) {
+        grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    }
+
+    img {
+        width: 30rem;
+
+        @media (max-width: 950px) {
+            width: 24rem;
+        }
+    }
+    li {
+        list-style-type: disc;
+        padding-bottom: 1rem;
+    }
+}
+
+.carousel{
+    max-width: 600px;
+    margin: 0 auto;
+
+    @media (max-width: 650px) {
+        max-width: 500px;  
+    };
+    @media (max-width: 530px) {
+        max-width: 400px;  
+    };
+    @media (max-width: 430px) {
+        max-width: 300px;  
+    };
+
+    .carousel_item {
+        height: 30rem;
+        max-width: 94%;
+        object-fit: cover;
+        border: 1px solid rgb(184, 184, 184);
+        box-shadow: 5px 5px 5px rgba(72, 72, 72, 0.4);
+        @media (max-width: 530px) {
+            height: 25rem; 
+            object-fit: cover;
+        };
+        @media (max-width: 430px) {
+            height: 20rem; 
+        };  
+    }
+
+    .alice-carousel__prev-btn{
+        text-align: center;
+    }
+}
+
+}

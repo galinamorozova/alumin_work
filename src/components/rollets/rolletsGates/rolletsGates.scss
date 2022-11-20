@@ -1,0 +1,290 @@
+@import '../../../css/variabilities.scss';
+
+.rolletsGates {
+
+    color: #393939;
+
+    h3 {
+        text-transform: uppercase;
+        font-family: $roboto-slab;
+        font-size: 1.5rem;
+        margin-top: 8rem;
+        margin-bottom: 2.5rem;
+
+        &:first-of-type {
+            margin-top: -1rem;
+        }
+    
+    }
+
+    h4  {
+        text-transform: uppercase;
+        font-size: 1.25rem;
+    }
+
+    img {
+        object-fit: cover;
+        width: 100%;
+    }
+
+     img[alt='роллетные ворота'] {
+         object-fit: cover;
+         width: 100%;
+     }
+
+
+    .menu_content{
+        display: flex;
+
+        .button_content {
+            flex-grow: 1;
+            button {
+                @media (max-width: 470px) {
+                    font-size: 1rem;
+                }
+            }
+            
+        }
+    
+    }
+
+
+     .content {
+         padding: 3rem 2rem;
+
+     }
+
+    .plusWrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        grid-template-rows: 1fr;
+        background-color: white;
+       
+        div {
+            padding: 2.5rem;
+            border: 1px solid rgb(184, 184, 184);
+        }
+
+        h4 {
+            font-size: 1rem;
+        }
+        .imageContainer {
+            padding: 0;
+            margin: 0;
+        }
+        div > img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            border: 1px solid rgb(184, 184, 184);
+        }
+    }
+ 
+    .typeWrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        grid-template-rows: 1fr;
+        grid-gap: 2%;
+        margin-bottom: 6rem;
+        width: 100%;
+        
+        
+
+         div {
+           
+
+            img {
+                object-fit: cover;
+                max-width: 100%;
+                height: 25rem;
+                
+            }
+
+            h4, p {
+                height: 5rem;
+                text-align: center;
+                border-bottom: 1px solid #dfdfdf;
+                margin: 1.5rem 0 0 0;
+            }
+
+            span {
+                color: #acabab;
+                font-size: 0.9rem;
+            }
+         }
+    }
+
+    .variantWrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        grid-template-rows: 1fr;
+        background-color: #fff;
+        flex-wrap: wrap;
+        
+
+        img {
+            max-width: 75%;
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            margin-bottom: 2rem;
+        }
+       
+    }
+    img[alt='EV/77W экструдированный смотровой'] {
+        margin-bottom: 0;
+    }
+
+    img[alt='EA/77 экструдированный вентиляционный'] {
+        margin-bottom: 0;
+        margin-top: 2rem;
+    }
+    
+   
+
+    .controlWrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        grid-template-rows: 1fr;
+        gap: 1%;
+        justify-items: center;
+        align-items: center;
+        box-shadow: 0px 1px 3px 0 rgba(72, 72, 72, 0.2);
+        padding: 1.5rem;
+        
+
+        img {
+            object-fit: cover;
+            max-height: 100%;
+            width: 15rem;         
+        }
+    }
+    .rolletGates, .steelPlus {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        grid-template-rows: 1fr;
+        gap: 1rem;
+        box-shadow: 0px 1px 3px 0 rgba(72, 72, 72, 0.4);
+        padding: 1rem;
+        
+
+        img {
+            object-fit: cover;
+            width: 100%;
+        }
+        .characteristics {
+            margin-bottom: 1rem;
+        }
+    }
+    
+    .rolletDesign, .steelDesign {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: 1rem;
+
+        @media (max-width: 650px) {
+            flex-wrap: wrap;  
+        }
+
+        img {
+            object-fit: cover;
+            width: 60%;
+        }
+    }
+    .color, .steelWood, .steelControl, .steelColor{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        grid-template-rows: 1fr;
+        gap: 1rem;
+        justify-items: center;
+        margin-bottom: 7rem;
+        margin-top: 1rem;
+    
+           @media (max-width: 500px) {
+                grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+            }
+          
+    
+        div {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+            width: 10rem;
+        }
+    
+        img {
+            object-fit: fill;
+            width: 14rem;       
+        }
+     }
+     .additionalColor {
+         display: flex;
+         justify-content: center;
+
+         @media (max-width: 574px) {
+            flex-wrap: wrap;
+        }
+
+        
+
+         img {
+             object-fit: cover;
+             height: 10rem;
+             width: 20rem;
+         }
+     }
+
+     .steelPlus {
+         align-items: center;
+         margin-bottom: 7rem;
+
+         li {
+             text-align: left;
+             margin-bottom: 1rem;
+             line-height: 150%;
+         }
+     }
+     .steelDesign {
+         margin-bottom: 7rem;
+
+         @media (max-width: 1150px) {
+            flex-wrap: wrap; 
+        }
+
+
+         img {
+             height: 20rem;
+             width: 15rem;
+             object-fit: fill;
+         }
+     }
+    
+     .ral{
+         width: 15rem;
+         height: 7rem;
+         border: 1px solid grey; 
+     }
+
+    .r9006{background-color: #b5b3b4;};
+    .r9016{background-color: #fff;};
+    .r9010{background-color: rgb(250, 247, 237);};
+    .r1015{background-color: #f5e1aa;};
+    .r1001{background-color: #d2aa5a;};
+    .r7035{background-color: #b3bbb6;};
+    .r7004{background-color: #999999;};
+    .r5003{background-color: #111526;};
+    .r6005{background-color: #00281c;};
+    .r7047{background-color: #c9cac9;};
+    .r5017{background-color: #003e91;};
+    .r8017{background-color: #3d1c05;};
+    .r8014{background-color: #562707;};
+    .r6029{background-color: #005b34;};
+    .r3005{background-color: #970700;};
+    .r3002{background-color: #d12121;};
+    .r1018{background-color: #fbe22b;};
+    .r9005{background-color: black;};
+
+}

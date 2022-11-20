@@ -1,0 +1,309 @@
+@import '../../../css/variabilities.scss';
+
+.standartRollets {
+
+    .button_content {
+        flex-grow: 1;
+
+        button {
+            @media (max-width: 470px) {
+                font-size: 1rem;
+            }
+            margin-right: 0.4rem;
+        }
+    }
+
+    color: #393939;
+
+    h3 {
+        text-transform: uppercase;
+        font-family: $roboto-slab;
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    h4 {
+        text-transform: justify;
+        font-size: 1.5rem;
+    }
+
+    img {
+        border: 1px solid rgb(172, 172, 172);
+    }
+    p{
+        text-align: justify;
+        margin: 2rem 0;
+    }
+
+
+    .menu_content{
+        display: flex;
+
+        .button_content {
+            flex-grow: 1;
+        }
+    
+    }
+
+ 
+    .titleImage {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        grid-template-rows: 1fr;
+        grid-gap: 1%;
+        margin-bottom: 5rem;
+
+        @media (max-width: 1165px) {
+            grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+        }
+        @media (min-width: 817px) and (max-width: 908px) {
+            grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+         }
+         @media (min-width: 500px) and (max-width: 816px) {
+            grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+         }
+
+        img {
+           object-fit: cover;
+           width: 100%;
+           height: 20rem;
+
+           @media (max-width: 816px) {
+            height: 17rem;
+         }
+         @media (max-width: 570px) {
+            height: 14rem;
+         }
+        }
+    }
+
+    .pluses {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        grid-template-rows: 1fr;
+        grid-gap: 3%;
+        align-items: center;
+        margin: 2rem 0 7rem 0;
+        box-shadow: 0px 1px 3px 0 rgba(72, 72, 72, 0.2);
+        padding: 0 1.5rem 1.5rem 1.5rem;
+
+        @media (max-width: 992px) {
+            grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+        }
+        @media (max-width: 536px) {
+            grid-gap: 0;
+        }
+
+        @media (max-width: 375px) {
+            grid-gap: 0;
+        }
+
+        img {
+            grid-row: 1/4;
+            object-fit: cover;
+            max-width: 100%;
+            max-height: 100%;
+
+        }
+    }
+
+    .typeWrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        grid-template-rows: 1fr;
+        grid-gap: 2%;
+        margin-bottom: 6rem;
+        width: 100%;
+
+        @media (max-width: 375px) {
+            grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+            margin-bottom: 12rem;
+        }
+
+        
+
+         div {
+           
+
+            img {
+                object-fit: cover;
+                max-width: 100%;
+                height: 15rem;
+                
+            }
+
+            h4, p {
+                height: 7rem;
+                text-align: center;
+                border-bottom: 1px solid #dfdfdf;
+                margin: 1.5rem 0 0 0;
+
+                @media (max-width: 375px) {
+                    height: 4rem;
+    
+                }
+            }
+
+            span {
+                color: #acabab;
+                font-size: 0.9rem;
+            }
+         }
+    }
+
+    .controlWrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+        grid-template-rows: 1fr;
+        gap: 1%;
+        justify-items: center;
+        align-items: center;
+        box-shadow: 0px 1px 3px 0 rgba(72, 72, 72, 0.2);
+        padding: 1.5rem;
+        
+
+        img {
+            object-fit: cover;
+            max-height: 100%;
+            width: 15rem;         
+        }
+    }
+    .rolletDoorhan, .steelPlus {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        grid-template-rows: 1fr;
+        gap: 3rem;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        box-shadow: 0px 1px 3px 0 rgba(72, 72, 72, 0.4);
+        padding: 1rem;
+
+        @media (max-width: 800px) {
+            grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+        }
+
+        h4{
+            font-size: 1.1rem;
+        }
+
+        img {
+            object-fit: cover;
+            width: 100%;
+        }
+        .characteristics {
+            margin-bottom: 3rem;
+            p {
+                padding: 0.5rem;
+                margin: 0;
+            }
+        }
+    }
+    .rolletDesign, .steelDesign {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: 1rem;
+        
+
+        h4{
+            font-size: 1.1rem;
+        }
+
+        @media (max-width: 855px) {
+            flex-wrap: wrap;  
+        }
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            @media (max-width: 855px) {
+                width: 70%; 
+            }
+        }
+        p{
+            text-align: center;
+        }
+    }
+    .color, .steelWood, .steelControl, .steelColor {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        grid-template-rows: 1fr;
+        gap: 1rem;
+        justify-items: center;
+        margin-bottom: 7rem;
+    
+           @media (max-width: 500px) {
+                grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+            }
+    
+        div {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+            width: 10rem;
+        }
+    
+        img {
+            object-fit: fill;
+            width: 15rem;       
+        }
+     }
+     img[alt='золотой дуб'], img[alt='темный дуб'] {
+         object-fit: cover;
+        height: 9rem;
+        width: 20rem;
+    }
+    .steelPlus {
+        align-items: center;
+        margin-bottom: 7rem;
+
+        li {
+            text-align: left;
+            margin-bottom: 1rem;
+            line-height: 150%;
+        }
+    }
+    .steelDesign {
+        margin-bottom: 7rem;
+
+        @media (max-width: 1150px) {
+           flex-wrap: wrap; 
+       }
+
+
+        img {
+            height: 20rem;
+            width: 15rem;
+            object-fit: fill;
+        }
+    }
+
+    .ral{
+        width: 15rem;
+        height: 7rem;
+        border: 1px solid grey; 
+    }
+
+   .r9006{background-color: #b5b3b4;};
+   .r9016{background-color: #fff;};
+   .r9010{background-color: rgb(250, 247, 237);};
+   .r1015{background-color: #f5e1aa;};
+   .r1001{background-color: #d2aa5a;};
+   .r7035{background-color: #b3bbb6;};
+   .r7004{background-color: #999999;};
+   .r5003{background-color: #111526;};
+   .r6005{background-color: #00281c;};
+   .r7047{background-color: #c9cac9;};
+   .r5017{background-color: #003e91;};
+   .r8017{background-color: #3d1c05;};
+   .r8014{background-color: #562707;};
+   .r6029{background-color: #005b34;};
+   .r3005{background-color: #970700;};
+   .r3002{background-color: #d12121;};
+   .r1018{background-color: #fbe22b;};
+   .r9005{background-color: black;};
+}

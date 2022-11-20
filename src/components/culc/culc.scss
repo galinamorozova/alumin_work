@@ -1,0 +1,71 @@
+@import '../../css/variabilities.scss';
+
+.culc {
+
+    padding-top: 4rem;
+
+    @media (max-width: 1024px) {
+        padding-top: 2rem;
+    }
+
+    p {
+        font-family: sans-serif;
+        color: #616161;
+    }
+
+    .contentCallback {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        text-align: center;
+        width: 60%;
+        margin: 0 auto;
+
+    
+    
+    h2 {
+            font-family: $roboto-slab;
+            font-size: 2rem;
+            color: #222222;
+            text-transform: uppercase;
+            font-weight: bold;
+            padding-bottom: 0.5rem;
+    };
+    button {
+        padding: 1.5rem 5.2rem;
+        margin-top: 2.5rem;
+        border-radius: 2px;
+        background-color: #43a906;
+        font-family: $roboto-slab;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #ffffff;
+        cursor: pointer;
+    }
+    [placeholder] {
+        font-family: $open-sans;
+        font-size: 1rem;
+        font-style: italic;
+        text-align: left;
+        color: #696969;
+        padding-left: 0.5rem;
+
+    }
+
+    .callbackWrapper {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin: 0 auto;
+
+        input, textarea {
+            margin-bottom: 1rem;
+            height: 2.5rem;
+        };
+
+        [placeholder="Интересующее изделие, размеры, цвет и т.п. *"] {
+            height: 10rem;
+        }
+    }
+    }
+
+}

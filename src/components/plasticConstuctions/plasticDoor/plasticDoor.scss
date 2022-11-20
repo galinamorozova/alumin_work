@@ -1,0 +1,94 @@
+@import '../../../css/variabilities.scss';
+
+
+.plasticDoor {
+
+    p {
+        text-align: left;
+        margin-top: 1rem;
+
+        @media (max-width: 375px) {
+            text-align: justify;
+        }
+    }
+
+    .menu_content{
+        display: flex;
+    
+    }
+
+    img[alt='door60'], img[alt='door70'] {
+             width: 25rem;
+             object-fit: contain;
+         }
+
+    .colors, .doorTittle {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        grid-template-rows: 1fr;
+        grid-gap:1%;
+
+        @media (max-width: 890px) {
+            grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+            justify-items: center;
+        }
+
+        @media (max-width: 590px) {
+            grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+            justify-items: center;
+        }
+
+        img {
+            object-fit: cover;
+            width: 10rem;
+            height: 10rem;
+            border: 1px solid grey;
+
+            @media (max-width: 890px) {
+                width: 17rem;
+                height: 15rem;
+            }
+
+            @media (max-width: 375px) {
+                width: 12rem;
+                height: 12rem;
+            }
+
+        }
+    }
+    .doorTittle {
+
+        img {
+            width: 20rem;
+            height: 20rem;
+
+            @media (max-width: 890px) {
+                width: 17rem;
+                height: 15rem;
+            }
+
+            @media (max-width: 590px) {
+                width: 25rem;
+                height: 17rem;
+            }
+        }
+    }
+
+    ul {
+        text-align: left;
+        margin-top: 2rem;
+    }
+    h4 {
+        margin-top: 2rem;
+        font-size: 1.2rem;
+    }
+    span {
+        font-family: $roboto-slab;
+        font-weight: bold;
+    }
+
+    img {
+        object-fit: cover;
+        width: 100%;
+    }
+}

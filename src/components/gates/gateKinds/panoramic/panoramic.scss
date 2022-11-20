@@ -1,0 +1,198 @@
+@import '../../../../css/variabilities.scss';
+
+.panoramicGates {
+
+    color: #393939;
+
+    h3 {
+        text-transform: uppercase;
+        font-family: $roboto-slab;
+        font-weight: bold;
+        margin-top: 5rem;
+
+
+        &:first-of-type{
+            margin-top: -1rem;
+
+            @media (max-width: 375px) {
+                margin-top: 2rem;
+            }
+        }
+    }
+
+    h4 {
+        text-transform: initial;
+        font-family: $roboto-slab;
+        font-size: 1.05rem;
+    }
+
+    p{
+        text-align: justify;
+        margin: 2rem 0;
+    }
+
+    span {
+        color: #a5a4a4;
+    }
+
+
+    .menu_content{
+        display: flex;
+
+        .button_content {
+            flex-grow: 1;
+        }
+    
+    }
+
+    .content {
+
+        img[alt='панорамные ворота'] {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+        img[alt='панорамные Doorhan'] {
+            object-fit: cover;
+            width: 100%;
+            height: 20rem;
+        }
+        i {
+            color: #43a906;
+            font-size: 1.3rem;
+            margin-right: 1rem;
+        }
+
+
+        .typeWrapper, .variantWrapper {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+            grid-template-rows: 1fr;
+            gap: 1%;
+            justify-items: center;
+            margin-top: 6rem;
+
+             @media (max-width: 1137px) {
+                 grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); 
+                 gap: 2%;
+             }
+
+             @media (max-width: 375px) {
+                gap: 0.5%;
+            }
+            
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                    height: 15rem;
+
+                    @media (min-width: 768px) and (max-width: 904px) {
+                        width: 30rem;
+                     }
+                }
+                p {
+                    text-align: center;
+                }
+            
+        }
+        .typeWrapper { 
+            @media (min-width: 490px) and (max-width: 904px) {
+                grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); 
+             }
+        }
+
+        .variantWrapper {
+            img {
+                height: 22rem;
+            }
+        }
+
+        img[alt='цвета']{
+            max-width: 70%;
+        }
+
+        .controlWrapper {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+            grid-template-rows: 1fr;
+            gap: 1%;
+            justify-items: center;
+            align-items: center;
+            
+    
+            div > img {
+                object-fit: cover;
+                max-height: 100%;
+                width: 15rem;
+                
+            }
+        }
+    
+    }
+    .addition {
+        img{
+            width: 100%;
+            height: 20rem;
+            object-fit: fill;
+
+            @media (max-width: 570px) {
+                height: 30rem;
+            }
+            @media (max-width: 490px) {
+                height: 20rem;
+            }
+        }
+    }
+    .characteristics {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-items: center;
+        margin-bottom: 7rem;
+        
+   
+        p {
+            margin: 1rem 0;
+           border-bottom: 1.5px solid rgb(194, 187, 187);
+        }
+    }
+    .design, .surface, .color, .panels, .glass {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        grid-template-rows: 1fr;
+        gap: 1rem;
+        justify-items: center;
+        margin-bottom: 7rem;
+        @media (max-width: 500px) {
+            grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+         }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+            width: 20rem;
+            @media (max-width: 1100px) {
+                width: 17rem;
+             }
+             @media (max-width: 800px) {
+                 width: 15rem;
+              }
+              @media (max-width: 600px) {
+                 width: 22rem;
+              }
+        }
+        img {
+            width: 15rem;
+            object-fit: fill;
+        }
+    }
+    
+    .panels {
+        grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+        div {
+            width: 12rem;
+        }
+    }
+}

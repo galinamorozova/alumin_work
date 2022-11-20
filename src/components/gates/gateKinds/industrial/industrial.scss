@@ -1,0 +1,399 @@
+@import '../../../../css/variabilities.scss';
+
+.industrialGates {
+
+
+    img {
+        border: 1px solid rgb(189, 188, 188);
+    }
+
+    .menu_content{
+        display: flex;
+
+        .button_content {
+            flex-grow: 1;
+        }
+    
+    }
+
+    .content {
+        text-align: left;
+
+        h3 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        h4 {
+            font-family: $roboto-slab;
+            font-weight: bold;
+            margin-top: 0;
+            margin-bottom: 2rem;
+            text-align: center;
+            margin-top: 6rem;
+            
+        };
+        h5 {
+            font-family: $roboto-slab;
+            font-weight: normal;
+            font-style: italic;
+            font-size: 1rem;
+            text-transform: uppercase;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            }
+
+
+        .characteristicWrapper {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+            grid-template-rows: 1fr;
+            grid-gap: 1%;
+            
+
+            div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+
+             .proTrend {
+                 width: 75%;
+
+                 @media (max-width: 587px) {
+                    width: 100%;
+                }
+             }
+
+            h4 {
+                margin-top: 0;
+            }
+
+            div {
+                
+                padding: 2rem 1rem;
+                color: #393939;
+                line-height: 1.25rem;
+                text-align: justify;
+
+                li {
+                    margin-top: 1rem;
+                }
+            }
+
+            p {
+                
+                padding-bottom: 0.5rem;
+            }
+
+            img {
+                height: 20rem;
+                margin-top: 2rem;
+                
+            }
+        };
+
+        .panelWrapper {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+            grid-template-rows: 1fr;
+            grid-gap: 1%;
+
+            @media (max-width: 880px) {
+                grid-template-columns: repeat(auto-fit, minmax(25.5rem, 1fr));
+           }
+          
+            
+            div {
+                display: flex;
+                justify-content: space-around;
+                @media (max-width: 398px) {
+                    flex-wrap: wrap;
+               }
+            }
+            img {
+                object-fit: cover;
+                object-position: center;
+                max-width: 15rem;
+                height: 15rem;
+
+                 @media (max-width: 375px) {
+                     height: 21rem;
+                }
+            }; 
+
+            div:last-of-type {
+
+                margin-bottom: 4rem;
+                img {
+
+                    @media (max-width: 320px) {
+                        width: 14rem;
+                        height: 15rem;
+                   }
+                }
+            }
+
+                  
+        };
+        .panelColor {
+
+            img {
+                @media (max-width: 1300px) {
+                    max-height: 73%;
+                }
+                @media (max-width: 900px) {
+                    max-height: 64%;
+                }
+                @media (max-width: 800px) {
+                    max-height: 58%;
+                }
+                @media (max-width: 750px) {
+                    max-height: 52%;
+                }
+                @media (max-width: 670px) {
+                    max-height: 48%;
+                }
+                @media (max-width: 600px) {
+                    max-height: 41%;
+                }
+                @media (max-width: 520px) {
+                    max-height: 36%;
+                }
+                @media (max-width: 450px) {
+                    max-height: 31%;
+                }
+                
+                @media (max-width: 390px) {
+                    max-height: 27%;
+                }
+                @media (max-width: 340px) {
+                    max-height: 25%;
+                }
+            }
+
+            .ri-trigger {
+                width: 436px;
+                @media (max-width: 515px) {
+                    width: 320px;
+                }
+              
+                @media (max-width: 400px) {
+                    width: 280px;
+                }
+                
+            }
+        }
+
+            .wicketWrapper {
+                margin-top: 2rem;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+                grid-template-rows: 1fr;
+                grid-gap: 1%;
+                justify-items: center;
+
+                @media (max-width: 992px) {
+                    grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
+                }
+
+                
+                @media (max-width: 398px) {
+                    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+                }
+
+
+                div {
+                    margin-bottom: 2rem;
+                };
+                img {
+                    width: 31rem;
+                    @media (max-width: 992px) {
+                        width: 29rem;
+                    }
+                    @media (max-width: 375px) {
+                        width: 25rem;
+                    }
+                }
+            };
+
+
+            .techWrapper {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+                grid-template-rows: 1fr;
+                grid-gap: 1%;
+                justify-items: center;
+                align-items: center;
+                margin-bottom: 1rem;
+
+                img {
+                    object-fit: cover;
+                    max-width: 100%;
+                    height: 15rem;
+                }
+                
+                [alt='Одновальная система балансировки'], [alt='Двухвальная система балансировки'] {
+                    width: 25rem;
+                };
+            };
+    
+
+           .lockWrapper, .doorWrapper, .wetWrapper, .panoramWrapper, .vandalWrapper, .windowsWrapper, .surface, .design, .color, .base {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+            grid-template-rows: 1fr;
+            justify-items: center;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            grid-gap: 1%;
+            
+
+                img {
+                    object-fit: cover;
+                    max-width: 100%;
+                    height: 15rem;
+                }
+            
+                p{
+            
+                  text-align: justify;
+                  padding-right: 3rem;
+                  padding-left: 3rem;
+                }
+
+           };
+           .windowsWrapper {
+            @media (max-width: 992px) {
+                grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+            }
+
+            @media (max-width: 550px) {
+                grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+            }
+           }
+
+           .surface, .design, .base {
+            grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+
+            div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            @media (max-width: 421px) {
+               grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+            }
+            p{
+                text-align: center;
+                @media (max-width: 320px) {
+                    font-size: 0.9rem;
+                 }
+            }
+            img {
+                height: 15rem;
+                margin: 1.5rem;
+                object-fit: cover;
+                @media (max-width: 375px) {
+                    margin: 1.5rem;
+                 }
+            }
+        }
+
+        .base  {
+            grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        }
+
+        .surface {
+            [alt='под дерево'], [alt='stukko'] {
+                @media (max-width: 375px) {
+                    width: 15rem;
+                    margin: 0rem;
+                 }
+            }; 
+        }
+
+        
+
+        .color {
+
+            @media (max-width: 421px) {
+                grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+             }
+            img {
+                width: 10rem;
+                height: 10rem;
+                object-fit: cover;
+
+                @media (max-width: 375px) {
+                    width: 9rem;
+                    height: 9rem;
+                 }
+            }
+        }
+
+        .baseWrapper {
+            box-shadow: 0px 1px 3px 0 rgba(72, 72, 72, 0.4);
+            padding: 0.3rem;
+            margin-top: 3rem;
+
+            p{
+                @media (max-width: 375px) {
+                    font-size: 1.1rem;
+                    padding: 00.2rem;
+                 }
+            }
+            
+        };
+
+        .additionWrapper,.industrialDoorhan {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+            grid-template-rows: 1fr;
+            grid-gap: 3%;
+            margin-bottom: 10rem;
+    
+            img {
+                width: 100%;
+            }
+
+            div {
+                border: 1px solid rgb(184, 184, 184);
+                box-shadow: 0px 1px 3px 0 rgba(72, 72, 72, 0.2);
+                background-color: #fff;
+            }
+    
+            p {
+                padding: 1rem;
+            }
+        };
+        .additionWrapper {
+            @media (max-width: 992px) {
+                grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+                grid-gap: 1%;
+            }
+            @media (max-width: 440px) {
+                grid-gap: 1.5rem;
+             }
+        }
+
+        .industrialDoorhan {
+            align-items: center;
+            border: 1px solid rgb(184, 184, 184);
+            box-shadow: 0px 1px 3px 0 rgba(72, 72, 72, 0.2);
+            background-color: #fff;
+
+            @media (max-width: 375px) {
+                margin-bottom: 0rem;
+             }
+            
+            li {
+                padding: 1rem;
+            }
+        }
+    };
+   
+}

@@ -1,0 +1,153 @@
+@import '../../css/variabilities.scss';
+
+.autoDoor {
+
+    color: #393939;
+
+    h3 {
+        margin-top: 7rem;
+    }
+
+    // h3 {
+    //     text-transform: uppercase;
+    //     font-family: $roboto-slab;
+    //     font-weight: bold;
+    //     margin-top: 7rem;
+    // }
+
+    // h4 {
+    //     text-transform: initial;
+    //     font-family: $roboto-slab;
+    //     font-size: 1.05rem;
+    // }
+
+    p{
+        text-align: justify;
+        margin: 2rem 0;
+    }
+
+    span {
+        text-transform: uppercase;
+        font-family: $roboto-slab;
+        font-weight: bold;
+        color: rgb(33, 33, 33);
+        text-align: left;
+    }
+
+
+    .menu_content{
+        display: flex;
+    
+    }
+       
+    img[alt='автоматические двери'] {
+        object-fit: cover;
+        width: 100%;
+        height: 25rem;
+        border: 1px solid grey;
+    }
+
+    .typeWrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        grid-template-rows: 1fr;
+        gap: 2%;
+        justify-items: center;
+        margin-top: 5rem;
+
+        @media (min-width: 550px) and (max-width: 960px) {
+            grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+         }
+
+         @media (max-width: 400px) {
+            margin-bottom: 12rem;
+            grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+         }
+
+        .imageWrapper {
+            height: 20rem;
+        }
+        .type {
+            width: 16rem;
+
+            @media (min-width: 560px) and (max-width: 960px) {
+                width: 23rem;
+             }
+
+             @media (max-width: 400px) {
+                width: 24rem;
+             }
+        }
+
+            
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                border: 1px solid grey;
+            }
+            
+    }
+
+     .plusWrapper {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+         grid-template-rows: 1fr;
+         background-color: white;
+        
+           
+        div {
+            height: 23rem;
+            border: 1px solid rgb(184, 184, 184);
+            background-color: rgb(215, 215, 215);
+            display: flex;
+            align-items: center;
+        }
+
+        p {
+            margin: 1rem;
+        }
+    
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            border: 1px solid rgb(184, 184, 184);
+        }
+    }
+
+    .carousel{
+        max-width: 600px;
+        margin: 0 auto;
+
+        @media (max-width: 650px) {
+            max-width: 500px;  
+        };
+        @media (max-width: 530px) {
+            max-width: 400px;  
+        };
+        @media (max-width: 430px) {
+            max-width: 300px;  
+        };
+
+        .carousel_item {
+            height: 30rem;
+            max-width: 94%;
+            object-fit: cover;
+            border: 1px solid rgb(184, 184, 184);
+            box-shadow: 5px 5px 5px rgba(72, 72, 72, 0.4);
+            @media (max-width: 530px) {
+                height: 25rem; 
+                object-fit: cover;
+            };
+            @media (max-width: 430px) {
+                height: 20rem; 
+            };  
+        }
+
+        .alice-carousel__prev-btn{
+            text-align: center;
+        }
+    }
+   
+}

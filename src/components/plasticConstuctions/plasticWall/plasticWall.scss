@@ -1,0 +1,113 @@
+@import '../../../css/variabilities.scss';
+
+
+.plasticWall {
+
+
+
+    .menu_content{
+        display: flex;
+    
+    }
+
+    p {
+        text-align: left;
+        margin-top: 1rem;
+    }
+
+    img[alt='wall70'], img[alt='wall60'] {
+        width: 25rem;
+    }
+
+
+    .menu_content{
+        display: flex;
+    
+    }
+
+    .colors, .wallTittle {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        grid-template-rows: 1fr;
+        grid-gap:1%;
+
+         @media (max-width: 499px) {
+             grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+             justify-items: center;
+          }  
+        @media (max-width: 400px) {
+            grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+            justify-items: center;
+        }
+
+        img {
+            object-fit: cover;
+            width: 10rem;
+            height: 10rem;
+            border: 1px solid grey;
+
+            @media (max-width: 499px) {
+                width: 17rem;
+             }            
+        }
+    }
+
+    .wallTittle {
+
+        @media (min-width: 768px) and (max-width: 900px) {
+            grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+         }
+         @media (min-width: 400px) and (max-width: 549px) {
+            grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+            justify-items: center;
+         }
+        img {
+            width: 20rem;
+            height: 20rem;
+
+            @media (min-width: 830px) and (max-width: 890px) {
+                width: 18rem;
+                height: 18rem;
+             }
+
+             @media (min-width: 790px) and (max-width: 829px) {
+                width: 17rem;
+                height: 17rem;
+             }
+
+             @media (max-width: 789px) and (min-width: 751px) {
+                width: 16rem;
+                height: 16rem;
+            }
+
+            @media (max-width: 730px) and (min-width: 550px) {
+                width: 15rem;
+                height: 15rem;
+            }
+
+            @media (max-width: 549px) and (min-width: 320px) {
+                width: 25rem;
+                height: 15rem;
+            }
+        }
+    }
+   
+
+    ul {
+        text-align: left;
+        margin-top: 2rem;
+    }
+    h4 {
+        margin-top: 2rem;
+        font-size: 1.2rem;
+    }
+    span {
+        font-family: $roboto-slab;
+        font-weight: bold;
+    }
+
+    img {
+        object-fit: cover;
+        width: 100%;
+    }
+}

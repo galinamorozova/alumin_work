@@ -1,0 +1,71 @@
+@import '../../css/variabilities.scss';
+
+
+
+.catalogWrapper {
+    padding: 3rem 0 7rem 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    @media (max-width: 1024px) {
+        padding: 1rem 0; 
+        padding-top: 0;
+    }
+
+
+    .catalogProduct {
+        width: 15rem;
+        padding: 4rem 0;
+
+        @media (max-width: 768px) {
+            width: 12rem;  
+        };
+
+        @media (max-width: 320px) {
+            padding: 2.7rem 0; 
+        };
+
+        &:hover {
+
+            svg {
+                fill: #43a906;
+            }
+
+            p {
+                color: #43a906;
+            }
+          };
+
+    }
+
+    svg {
+        width: 6rem;
+        height: 6rem ;
+        fill:#393939;
+    }
+    
+
+    p {
+        font: 1rem $roboto-slab;
+        text-transform: uppercase;
+        color: #646464;
+        font-weight: 700;
+    }
+}
+
+.pretty {
+   width: 100%;
+   height: 27rem;
+   padding-bottom: 7rem;
+
+   @media (max-width: 1024px) {
+    padding-bottom: 4rem;
+}
+
+   img {
+    object-fit:cover;
+    width: 100%;
+    height: 100%;
+   }
+}
